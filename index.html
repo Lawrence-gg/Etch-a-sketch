@@ -13,20 +13,22 @@
 </head>
 
 <body>
-    <h1>Etch a sketch</h1>
+    <h1><u>Etch a sketch<u></h1>
     <div class="control-buttons-top">
-        <button class="button">Black</button>
-        <button class="button">Rainbow</button>
-        <button class="button">Picker</button>
-        <button class="button">Eraser</button>
+        <button class="button" id="black">Black</button>
+        <button class="button" id="rainbow">Rainbow</button>
+        <button class="button" id="eraser">Eraser</button>
+        <input class="button" type="color" id="colorPicker" value="#F70808"></button>
     </div>
     <div class="container"></div>
     <div class="control-buttons-bottom">
-        <button class="clear">Clear</button>
-        <button class="setSize">setScale</button>
+        <button class="button clear" id="clear">Clear</button>
+        <div class="slider">
+            <input type="range" min="8" max="50" value="16" class="setSize">
+            <span class="sliderText">
+            </span>
+        </div>
     </div>
-
-
 
 </body>
 <script src="script.js"></script>

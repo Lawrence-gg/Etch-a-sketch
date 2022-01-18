@@ -6,14 +6,15 @@ body * {
     color: unset;
     text-decoration: unset;
     */
-    background-color: #000080;
+    background-color: #000052;
+    font-family: 'VT323', monospace;
 }
 h1 {
     font-family: 'VT323', monospace;
     text-align: center;
     font-size: 6rem;
-    color: yellow;
-    margin-bottom: 20vh;
+    color: rgb(247, 243, 10);
+    margin-bottom: 12vh;
 }
 
 .control-buttons-top{
@@ -21,16 +22,33 @@ h1 {
     margin: 0 auto;
     justify-content: space-evenly;
     width: 600px;
-    color: white;
+    margin-bottom: 12px;
 }
-button {
+.button {
     flex: 1;
-    color: white;
-    background-color: lightblue;
+    color: rgb(252, 239, 55);
+    background-color: #000052;
     padding: 6px 6px;
     margin: 4px;
     gap: 6px;
+    font-size: 18px;
+    font-family: 'VT323', monospace;
+    border: 2px solid rgb(255,4,67);
+    border-radius: 6px;
 }
+
+input[type="color"] {
+    height: 34px;
+}
+
+
+.button:hover {
+    background-color:rgb(252,239,55);
+    color: rgb(255,4,67);
+    box-shadow: 4px 4px rgb(131, 22, 255);
+}
+
+
 
 .container {
     padding: 12px 12px;
@@ -38,36 +56,56 @@ button {
     display:  flex;
     background-color: white;
     justify-content: center;
-    min-width: 200px;
-    width: 600px;
+    min-width: 210px;
+    width: 630px;
     height: 600px;
     min-height: 200px;
     background-clip: content-box;
-    box-shadow: inset 0 0 0 12px rgb(65, 65, 65);
+    box-shadow: inset 0 0 0 12px rgb(255, 4, 67);
 }
 
 .control-buttons-bottom {
     display: flex;
-    margin: 0 auto;
+    margin: 8px auto;
     width: 600px;
+    
 }
 
 .clear {
+    flex: 1;
+    color: rgb(252, 239, 55);
+    background-color: #000052;
+    padding: 6px 6px;
+    margin: 4px;
+    gap: 6px;
+    font-size: 18px;
+    font-family: 'VT323', monospace;
+    border: 2px solid rgb(255,4,67);
+    border-radius: 6px;
     flex: 3;
 }
 
-.setSize {
+
+.slider {
+    display: flex;
+    margin-left: 20px;
     flex: 7;
+    flex-direction: column;
+}
+.sliderText {
+    color: red;
+    text-align: center;
 }
 
+.setSize {
+    border: 1px solid yellow;
+}
 
 
 .sketchColumn {
     flex: 1;
     display: flex;
     flex-direction: column;
-    height: 100%;
-    
     
 }
 .sketchRow {
@@ -77,6 +115,3 @@ button {
     border: 1px solid rgb(105, 99, 99);
 }
 
-#mouseWave {
-    background-color: black;
-}
