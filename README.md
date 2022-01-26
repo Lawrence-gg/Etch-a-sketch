@@ -1,10 +1,8 @@
 # Etch-a-sketch
 
-Etch a sketch with the Odin Project
+Building an etch a sketch project
 
-Building an etch a sketch project:
+This was part of the odin project curriculum, building an etch a sketch which was a good way to practice manipulation of the DOM.
 
-#Skills practiced:
-DOM Manipulation
-Problem Solving
-Flexbox and CSS
+
+
